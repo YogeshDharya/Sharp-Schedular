@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 function RoomCard({ room }) {
     return (
         <div className="col-md-4 mb-4">
+
             <div className="card h-100 room-card">
+
                 <div className="card-body d-flex flex-column">
 
                     <h5 className="card-title">
@@ -19,15 +21,16 @@ function RoomCard({ room }) {
                     </p>
 
                     <Link
-                        // to={`/rooms/${room.id}`}
-                        to="/reservations"
+                        to={`/rooms/${room.id}`}
                         className="btn btn-primary mt-auto"
                     >
                         Book Room
                     </Link>
 
                 </div>
+
             </div>
+
         </div>
     );
 }
